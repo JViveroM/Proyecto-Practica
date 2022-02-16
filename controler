@@ -18,11 +18,10 @@ public class controller {
 				if (j==i) {
 					if(j%2==0) {
 						matrix[i][j]=2;
-						matriz.setMatrix(matrix);
 					}else {
 						matrix[i][j]=1;
-						matriz.setMatrix(matrix);
 					}
+					matriz.setMatrix(matrix);
 				};
 			}
 		}
