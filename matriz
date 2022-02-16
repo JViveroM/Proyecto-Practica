@@ -1,0 +1,19 @@
+package modelo;
+
+public class matriz {
+	
+	private int matrix [][];
+	
+	public matriz() {
+		matrix = new int [4][4];
+	}
+
+	public int[][] getMatrix() {
+		return matrix;
+	}
+
+	public void setMatrix(int[][] matrix) {
+		this.matrix = matrix;
+	}
+
+}
