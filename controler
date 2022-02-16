@@ -1,0 +1,32 @@
+package co.edu.uelbosque.control;
+
+import modelo.matriz;
+
+public class controller {
+	
+	public int [][] matrix;
+	public matriz matriz;
+	
+	public controller() {
+		
+		llenarMatriz();
+	}
+	
+	public int [][] llenarMatriz(){
+		for (int i = 0; i<4; i++ ) {
+			for(int j = 0; j<4; j++ ) {
+				if (j==i) {
+					if(j%2==0) {
+						matrix[i][j]=2;
+						matriz.setMatrix(matrix);
+					}else {
+						matrix[i][j]=1;
+						matriz.setMatrix(matrix);
+					}
+				};
+			}
+		}
+		return matrix;
+	}
+	
+}
